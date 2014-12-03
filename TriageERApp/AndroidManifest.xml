@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.triageerapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="DogeER"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="DogeER" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HCNSearchActivity"
+            android:label="DogeER" >
+        </activity>
+        <activity
+            android:name=".PatientRecordActivity"
+            android:label="DogeER" >
+        </activity>
+        <activity
+            android:name=".NewRecordActivity"
+            android:label="DogeER" >
+        </activity>
+        <activity
+            android:name=".VisitRecordActivity"
+            android:label="DogeER" >
+        </activity>
+        <activity
+            android:name=".ViewRecordActivity"
+            android:label="DogeER" >
+        </activity>
+        <activity
+            android:name=".myMainScreen"
+            android:label="DogeER" >
+            <intent-filter>
+                <action android:name="com.tutorial.CLEARSCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".NurseMenuActivity"
+            android:label="@string/title_activity_nurse_menu" >
+        </activity>
+        <activity
+            android:name=".NewPatientActivity"
+            android:label="@string/title_activity_new_patient" >
+        </activity>
+        <activity
+            android:name=".UrgencyListActivity"
+            android:label="@string/title_activity_urgency_list" >
+        </activity>
+        <activity
+            android:name=".UpdatePrescriptionActivity"
+            android:label="@string/title_activity_update_prescription" >
+        </activity>
+        <activity
+            android:name=".TimeSeenActivity"
+            android:label="@string/title_activity_time_seen" >
+        </activity>
+    </application>
+
+</manifest>

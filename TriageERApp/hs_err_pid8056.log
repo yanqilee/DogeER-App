@@ -1,0 +1,109 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=8056, tid=760
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_40-b43) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.0-b56 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000223e800):  JavaThread "Unknown thread" [_thread_in_vm, id=760, stack(0x00000000024f0000,0x00000000025f0000)]
+
+Stack: [0x00000000024f0000,0x00000000025f0000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000223e800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=760, stack(0x00000000024f0000,0x00000000025f0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.007 loading class 0x000000000b0c0760 done
+Event: 0.007 loading class 0x000000000b0c0180 done
+Event: 0.007 loading class 0x000000000b0c0160
+Event: 0.007 loading class 0x000000000b0c8260
+Event: 0.007 loading class 0x000000000b0c8260 done
+Event: 0.007 loading class 0x000000000b0c8290
+Event: 0.007 loading class 0x000000000b0c8290 done
+Event: 0.007 loading class 0x000000000b0c82c0
+Event: 0.007 loading class 0x000000000b0c82c0 done
+Event: 0.007 loading class 0x000000000b0c0160 done
+
+
+Dynamic libraries:
+0x000000013f770000 - 0x000000013f7a3000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x0000000076cb0000 - 0x0000000076e59000 	C:\windows\SYSTEM32\ntdll.dll
+0x0000000076b90000 - 0x0000000076caf000 	C:\windows\system32\kernel32.dll
+0x000007fefcb50000 - 0x000007fefcbbc000 	C:\windows\system32\KERNELBASE.dll
+0x000007fefed30000 - 0x000007fefee0b000 	C:\windows\system32\ADVAPI32.dll
+0x000007fefe400000 - 0x000007fefe49f000 	C:\windows\system32\msvcrt.dll
+0x000007fefe980000 - 0x000007fefe99f000 	C:\windows\SYSTEM32\sechost.dll
+0x000007fefee90000 - 0x000007fefefbd000 	C:\windows\system32\RPCRT4.dll
+0x0000000076a90000 - 0x0000000076b8a000 	C:\windows\system32\USER32.dll
+0x000007fefe4a0000 - 0x000007fefe507000 	C:\windows\system32\GDI32.dll
+0x000007fefec50000 - 0x000007fefec5e000 	C:\windows\system32\LPK.dll
+0x000007fefd4b0000 - 0x000007fefd579000 	C:\windows\system32\USP10.dll
+0x000007fefb620000 - 0x000007fefb814000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefee10000 - 0x000007fefee81000 	C:\windows\system32\SHLWAPI.dll
+0x000007fefed00000 - 0x000007fefed2e000 	C:\windows\system32\IMM32.DLL
+0x000007fefd3a0000 - 0x000007fefd4a9000 	C:\windows\system32\MSCTF.dll
+0x000000006a5e0000 - 0x000000006a6b1000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x0000000061430000 - 0x0000000061bf9000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x000007fef7310000 - 0x000007fef7319000 	C:\windows\system32\WSOCK32.dll
+0x000007fefd0c0000 - 0x000007fefd10d000 	C:\windows\system32\WS2_32.dll
+0x000007fefe3f0000 - 0x000007fefe3f8000 	C:\windows\system32\NSI.dll
+0x000007fefadb0000 - 0x000007fefadeb000 	C:\windows\system32\WINMM.dll
+0x0000000076e70000 - 0x0000000076e77000 	C:\windows\system32\PSAPI.DLL
+0x00000000730c0000 - 0x00000000730cf000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x000000006cc50000 - 0x000000006cc78000 	C:\Program Files\Java\jre7\bin\java.dll
+0x000000006c930000 - 0x000000006c945000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Yanqi\University\3rd Year\Fall\CSC207\adt-bundle\adt-bundle-windows-x86_64-20140702\sdk\platforms\android-18\android.jar 
+java_command: com.example.triageerapp.PatientManager
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files (x86)\Java\jre6\lib\ext\QTJava.zip
+PATH=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\;C:\Program Files (x86)\Toshiba\Bluetooth Toshiba Stack\sys\x64\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\sbt\;C:\Program Files\SlikSvn\bin;C:\Ruby200-x64\bin;C:\altera\14.0\modelsim_ase\win32aloem;C:\altera\13.0\modelsim_ase\win32aloem
+USERNAME=Yanqi
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 8350520k(4336616k free), swap 16699176k(11428768k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.0-b56) for windows-amd64 JRE (1.7.0_40-b43), built on Aug 26 2013 22:38:32 by "java_re" with unknown MS VC++:1600
+
+time: Sun Nov 09 10:51:51 2014
+elapsed time: 0 seconds
+
